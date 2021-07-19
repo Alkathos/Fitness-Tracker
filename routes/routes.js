@@ -1,4 +1,5 @@
 const app = require('../server');
+const path = require ('path');
 
 app.get("/exercise", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/exercise.html"));
