@@ -18,3 +18,5 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userdb", { useN
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
+
+module.exports = app;
